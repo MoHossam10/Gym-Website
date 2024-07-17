@@ -1,0 +1,58 @@
+<!DOCTYPE html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign Up Page</title>
+        <link rel="stylesheet" href="sign up.css">
+    </head>
+<body>
+
+    <div class ="container">
+        <div class="card">
+        <div class="inner-box">
+        <div class="card-front">
+
+            <h1>SIGN UP</h1>
+
+            <form  method="post" action="ControllerSignUp.php">
+            
+                
+            <input type="text" class="input-box"placeholder="Full Name" required>
+            
+            
+            <input type="email" class="input-box" placeholder="Your Email" required>
+            
+            <label for="RoleName" class="input-box">Choose Role Name:</label>
+            <select class="input-box" value="RoleName" required>
+                <option  value="Manager">Manager</option>
+                <option  value="Doctor">Doctor</option>
+                <option  value="Acountant">Acountant</option>
+                <option  value="Pharmacist">Pharmacist</option>
+            </select>
+        
+            <label for="Gender" class="input-box">Choose Your Gender:</label>
+            <select  class="input-box" value="Gender" required>
+                <option  value="Male">Male</option>
+                <option  value="Female">Female</option>
+            </select>
+            
+
+            <input type="password" class="input-box" placeholder="Password" required>
+            <input type="text" minlength="14"  maxlength="14" class="input-box"placeholder="National ID" required>
+            <input type="text"  minlength="11"  maxlength="11" class="input-box"placeholder="Phone Numebr" required>
+            <input type="text" class="input-box"placeholder="Address" required>
+            
+            <button type="submit" class="submit-btn">Submit</button>
+            </form>
+            <br> <hr> <br>
+            <button type="button" class="btn"><a href="login.html">I have an account</a></button>
+    </div>
+    </div>
+    </div>
+    </div>
+
+
+</body>
+</html>
